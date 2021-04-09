@@ -10,8 +10,8 @@ import java.text.DecimalFormat
  * @since : 2021
  */
 
-fun Float.roundOff(): String {
-    val df = DecimalFormat("##.##")
+fun Float.roundOff(patter:String ="##.##"): String {
+    val df = DecimalFormat(patter)
     return df.format(this)
 }
 
